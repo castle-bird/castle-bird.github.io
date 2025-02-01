@@ -47,8 +47,11 @@ export default function HomeView({
         구축: "build",
         웹접근성: "accessibility",
         nexacro: "nexacro",
-        si: "si",
+        SI: "si",
         입사: "join",
+        프론트엔드: 'front',
+        개인작업: 'individual',
+        React: 'react'
     };
     const onClose = ()=>{
         currentView.current.classList.remove("mo-show");

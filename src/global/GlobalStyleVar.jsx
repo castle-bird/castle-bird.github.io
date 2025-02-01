@@ -39,6 +39,7 @@ const colors = {
     gray: "#e8e8e8",
     gray2: "#999999",
     gray3: "#f0f0f0",
+    gray4: "#ddd",
 };
 
 const properties = {

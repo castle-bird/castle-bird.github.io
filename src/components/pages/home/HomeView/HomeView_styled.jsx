@@ -179,9 +179,21 @@ const HomeViewContainer = styled.article`
                 background-color: rgb(253, 236, 200);
                 color: rgb(64, 44, 27);
             }
+            .front {
+                background-color: #e0e6f7;
+                color: #3c4b73;
+            }
+            .individual {
+                background-color: #d6e9d6;
+                color: #2d4a34;
+            }
+            .react {
+                background-color: #e1f7ff;
+                color: #1c6f8c;
+            }
             .anothor {
-                background-color: rgb(243, 234, 243);
-                color: rgb(0, 0, 0);
+                background-color: #f5e6cc;
+                color: #6b4f3f;
             }
         }
     }

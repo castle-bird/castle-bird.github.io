@@ -45,7 +45,7 @@ const GlobalStyle = createGlobalStyle`
         }
 
     *::-webkit-scrollbar-thumb {
-        background-color: ${properties.colors.gray};
+        background-color: ${properties.colors.gray4};
         border-radius: 1rem;
     }
 

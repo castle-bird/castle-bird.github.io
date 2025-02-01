@@ -2,50 +2,112 @@ import styled from "styled-components";
 import properties from "../../../global/GlobalStyleVar";
 
 const HistoryContainer = styled.section`
+    height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
-    height: 100%;
+    padding: 2rem 0;
+
+    ${properties.mediaQuery.desktopSmall(`
+        padding: 0 15px;
+    `)}
 
     .history-wrap {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+
         max-width: ${properties.breakpoints.tablet};
         margin: 0 auto;
-        padding: 2rem 0;
 
-        .year {
-            flex: 1;
-
-            strong {
-                font-size: 8rem;
-                font-weight: 600;
-                line-height: 1;
-                color: ${properties.colors.primary};
-            }
-        }
-
-        .description {
-            flex: 1;
+        .item {
             display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-            gap: 4rem;
-            padding-left: 10rem;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 300px;
+            padding: 4rem 0;
+            border-top: 1px solid ${properties.colors.gray3};
 
-            li {
-                display: flex;
+            &:first-child {
+                border-top: none;
+                
+            }
+
+            ${properties.mediaQuery.mobile(`
+                align-items: start;
                 flex-direction: column;
+                gap: 20px 0;
+            `)}
 
-                &[data-year] {
-                    margin-top: 10rem;
-                }
-                &[data-year]:first-of-type {
-                    margin-top: 0;
+            .content {
+                display: flex;
+
+                ${properties.mediaQuery.mobileSmall(`
+                    flex-direction: column;
+                    gap: 1rem;
+                `)}
+
+                strong {
+                    width: 16rem;
+                    padding-right: 3rem;
+                    line-height: 1;
+                    font-weight: 600;
+                    font-size: 4rem;
+                    color: ${properties.colors.primary};
+
+                    ${properties.mediaQuery.tablet(`
+                        width: 14rem;
+                    `)}
                 }
 
-                .date {
-                    font-weight: 500;
-                    font-size: 2rem;
+                ul {
+                    li {
+                        display: flex;
+                        gap: 1rem;
+                        padding-top: 2rem;
+
+                        &:first-child {
+                            padding-top: 0;
+                        }
+
+                        ${properties.mediaQuery.mobileSmall(`
+                            padding-top: 1rem;
+                        `)}
+
+                        .date {
+                            font-weight: 600;
+                            width: 50px;
+
+                            ${properties.mediaQuery.tablet(`
+                                width: 40px;
+                            `)}
+                        }
+
+                        .description {
+                        }
+                    }
+                }
+            }
+
+            .thumb {
+                width: 300px;
+                height: 148px;
+                border-radius: 1rem;
+                overflow: hidden;
+
+                ${properties.mediaQuery.tablet(`
+                    width: 200px;
+                    height: 98px;
+                `)}
+
+                ${properties.mediaQuery.mobile(`
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                `)}
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
                 }
             }
         }

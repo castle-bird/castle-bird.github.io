@@ -1,22 +1,58 @@
 {
-    "2024": [
-        { "date": "2024-11", "description": "원스톱 입주자서비스 플랫폼" },
-        { "date": "2024-07", "description": "LX판토스 고도화" },
-        { "date": "2024-04", "description": "투비소프트AX 입사" },
-        { "date": "2024-01", "description": "(주) 엠투커뮤니티 운영" }
-    ],
-    "2023": [
-        { "date": "2023-10", "description": "금감원 차세대" },
-        { "date": "2023-07", "description": "(주)신세계 백화점 차세대" },
-        { "date": "2023-02", "description": "나이스 대국민서비스 웹접근성" }
-    ],
-    "2022": [
-        { "date": "2022-12", "description": "국민연금 차세대" },
-        { "date": "2022-10", "description": "삼성SDI 구축" },
-        { "date": "2022-01", "description": "(주) 엠투커뮤니티 운영" }
-    ],
-    "2021": [
-        { "date": "2021-12", "description": "(주) 코드파트너즈 입사" }
-    ]
-  }
-  
+    "2025": {
+        "data": [
+            { "date": "2025-01", "description": "작업기록 포트폴리오 북" },
+            { "date": "2025-02", "description": "H에너지 구축" }
+        ],
+        "thumb": {
+            "src" :"/images/history/history01.png",
+            "alt" : "포트폴리오북 홈페이지 스크린샷"
+        }
+    },
+    "2024": {
+        "data": [
+            { "date": "2024-11", "description": "원스톱 입주자서비스 플랫폼" },
+            { "date": "2024-07", "description": "LX판토스 고도화" },
+            { "date": "2024-04", "description": "투비소프트AX 입사" },
+            { "date": "2024-01", "description": "(주) 엠투커뮤니티 운영" }
+        ],
+        "thumb": {
+            "src" : "/images/history/history02.png",
+            "alt" : "투비소프트AX 홈페이지 스크린샷"
+        }
+    },
+    "2023": {
+        "data": [
+            { "date": "2023-10", "description": "금감원 차세대" },
+            { "date": "2023-07", "description": "(주)신세계 백화점 차세대" },
+            { "date": "2023-02", "description": "나이스 대국민서비스 웹접근성" }
+        ],
+        "thumb": {
+            "src" : "/images/history/history03.png",
+            "alt" : "나이스 대국민서비스 홈페이지 스크린샷"
+        }
+    },
+    "2022": {
+        "data": [
+            { "date": "2022-12", "description": "국민연금 차세대" },
+            { "date": "2022-10", "description": "삼성SDI 구축" },
+            { "date": "2022-01", "description": "(주) 엠투커뮤니티 운영" }
+        ],
+        "thumb": {
+            "src" : "/images/history/history04.png",
+            "alt" : "삼성SDI 홈페이지 스크린샷"
+        }
+    },
+    "2021": {
+        "data": [
+            {
+                "date": "2021-12",
+                "description": "(주) 코드파트너즈 입사"
+            }
+        ],
+        "thumb": {
+            "src" : "/images/history/history05.png",
+            "alt" : "코드파트너즈 홈페이지 스크린샷"
+        }
+    }
+}
