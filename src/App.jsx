@@ -39,7 +39,7 @@ function App() {
     return (
         <div id="body-wrap">
             {!is404 && <Header />}
-            <main style={{ minHeight: "600px", overflow: 'hidden' }}>
+            <main style={{ minHeight: "500px", overflow: 'hidden' }}>
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />

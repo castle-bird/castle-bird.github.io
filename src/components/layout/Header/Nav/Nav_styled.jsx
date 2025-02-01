@@ -73,22 +73,6 @@ const NavContainer = styled.nav`
         li {
             height: 100%;
 
-            &.more {
-                display: none;
-
-                ${properties.mediaQuery.tablet(`
-                    display: block;
-                `)}
-
-                button {
-                    height: 100%;
-                    background-color: transparent;
-                    padding: 0;
-                    border: none;
-                    cursor: pointer;
-                }
-            }
-
             a {
                 display: flex;
                 flex-wrap: wrap;

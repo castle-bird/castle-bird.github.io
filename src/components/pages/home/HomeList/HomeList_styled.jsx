@@ -10,15 +10,13 @@ const HomeListContainer = styled.article`
     `)} 
 
     ${properties.mediaQuery.mobile(`
-        position: absolute;
-        top: 0;
-        left: -280px;
-        height: 100%;
-        z-index: 1;
-        background-color: ${properties.colors.white};
-        transition: 0.4s ease-in;
-        box-shadow: 0 0 8px rgba(0 0 0 / 16%);
+        width: 230px;
     `)} 
+
+    ${properties.mediaQuery.mobileSmall(`
+        width: 100%;
+    `)} 
+
 
     ul {
         height: 100%;

@@ -119,11 +119,6 @@ export default function Nav({ hamburgerChecked, setHamburgerChecked }) {
                         )}
                     </li>
                 ))}
-
-                {/* 모바일에서 목록열기 */}
-                <li className="more">
-                    <button >List</button>
-                </li>
             </ul>
         </NavContainer>
     );

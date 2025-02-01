@@ -9,6 +9,7 @@
 - Styled Components: 컴포넌트별 스타일 관리를 편하게 하기 위함
 - Axios: 원활한 RESTful API 사용을 위함
 - prop-types : props로 전달되는 요소의 type을 명확히 지정
+- GSAP : 부드러운 애니메이션을 동작하기 위함 / History 페이지
 
 ## 사용한 주요 React Hooks
 - useState: 상태 관리를 위함 / 상태(변수) 변경 시 실시간 리렌더링

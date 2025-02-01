@@ -78,6 +78,7 @@ export function GitProvider({ children }) {
             });
     }, []);
 
+    // view에서 현재 데이터를 넘기기 위함
     useEffect(() => {
         // 처음에 data가 세팅 안됏을 때 리턴
         if(gitState.data === null) return

@@ -4,12 +4,62 @@ import properties from "../../../../global/GlobalStyleVar";
 const HomeViewContainer = styled.article`
     position: relative;
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    ${properties.mediaQuery.mobileSmall(`
+        display: none;
+    `)}
+
+    .close {
+        display: none;
+    }
+
+    &.mo-show {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: fixed;
+        inset: 0 0 0 0;
+        background-color: rgba(0 0 0 / 16%);
+
+        z-index: 1;
+
+        .close {
+            display: flex;
+            justify-content: flex-end;
+            width: 85%;
+            padding-top: 1rem;
+        }
+
+        .home-view-wrap {
+            position: relative;
+            width: 85%;
+            max-height: 70%;
+            padding: 2rem 1rem 0;
+            border-radius: 1rem 1rem 0 0;
+
+            .logo {
+                top: 1rem;
+                right: 10px;
+            }
+        }
+
+        .tags {
+            width: 85%;
+            padding: 1rem;
+            border-radius: 0 0 1rem 1rem;
+        }
+    }
 
     .home-view-wrap {
-        height: 100%;
         overflow-x: hidden;
         overflow-y: auto;
-        padding-bottom: 3rem;
+        padding-bottom: 2rem;
+        padding-right: 10px;
+        background-color: #fff;
 
         > * {
             margin-bottom: 1rem;
@@ -75,18 +125,12 @@ const HomeViewContainer = styled.article`
     }
 
     .tags {
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
-        gap: 1rem;
+        gap: 0.5rem 1rem;
 
-        height: 3rem;
-
-        margin-bottom: 0;
+        padding: 1rem 0;
         background-color: ${properties.colors.white};
 
         li {

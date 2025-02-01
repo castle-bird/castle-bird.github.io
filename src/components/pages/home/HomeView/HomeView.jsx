@@ -1,10 +1,30 @@
 import PropTypes from "prop-types";
 import HomeViewContainer from "./HomeView_styled";
 import Loading from "../../../loading/Loading";
+import { useEffect, useRef } from "react";
+import properties from "../../../../global/GlobalStyleVar";
 
 export default function HomeView({
     currentData: { id, role, title, timeline, logo, logoAlt, description, tags },
+    currentView,
 }) {
+    let resizeTimer = useRef(null);
+
+    useEffect(() => {
+        window.addEventListener("resize", () => {
+            clearTimeout(resizeTimer.current);
+
+            resizeTimer.current = setTimeout(() => {
+                const screenSize = window.innerWidth;
+                const moScreenSize = parseInt(properties.breakpoints.mobileSmall.replace("px", ""));
+
+                if (screenSize > moScreenSize) {
+                    currentView.current.classList.remove("mo-show");
+                }
+            }, 90);
+        });
+    }, [currentView]);
+
     if (!id) {
         return (
             <HomeViewContainer>
@@ -30,9 +50,12 @@ export default function HomeView({
         si: "si",
         입사: "join",
     };
+    const onClose = ()=>{
+        currentView.current.classList.remove("mo-show");
+    }
 
     return (
-        <HomeViewContainer>
+        <HomeViewContainer ref={currentView}>
             <div className="home-view-wrap">
                 <strong>{role}</strong>
                 <h4>
@@ -74,6 +97,9 @@ export default function HomeView({
                     </li>
                 ))}
             </ul>
+            <div className="close">
+                <button className="button" onClick={onClose}>닫기</button>
+            </div>
         </HomeViewContainer>
     );
 }
@@ -91,5 +117,11 @@ HomeView.propTypes = {
         description: PropTypes.string,
         logo: PropTypes.string,
         logoAlt: PropTypes.string,
+    }),
+    currentView: PropTypes.shape({
+        current: PropTypes.oneOfType([
+            PropTypes.instanceOf(Element), // HTML 요소
+            PropTypes.oneOf([null, undefined]), // null 또는 undefined 허용
+        ]),
     }),
 };
