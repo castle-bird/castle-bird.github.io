@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20.5 20.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient-5);
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11 {
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: .5px;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-12 {
+        fill: none;
+      }
+
+      .cls-4 {
+        fill: #757474;
+      }
+
+      .cls-5 {
+        fill: url(#linear-gradient-7);
+      }
+
+      .cls-6 {
+        fill: #515151;
+      }
+
+      .cls-7 {
+        fill: #afafaf;
+      }
+
+      .cls-8 {
+        fill: #e0e0e0;
+      }
+
+      .cls-9 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-10 {
+        fill: url(#linear-gradient-4);
+      }
+
+      .cls-11 {
+        fill: url(#linear-gradient-6);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="15.19" y1="10.19" x2="20.31" y2="5.31" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4d4d4d"/>
+      <stop offset="1" stop-color="#333"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1=".19" y1="10.19" x2="5.31" y2="5.31" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" y1="20.19" y2="15.31" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-4" x1="10.19" y1="20.19" x2="15.31" y2="15.31" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-5" x1=".19" y1="20.19" x2="5.31" y2="15.31" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-6" x1="5.19" y1="15.19" x2="10.31" y2="10.31" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-7" x1="10.19" y1="10.19" x2="15.31" y2="5.31" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="bk">
+    <g>
+      <g>
+        <rect class="cls-7" x=".25" y=".25" width="5" height="5"/>
+        <rect class="cls-4" x="5.25" y=".25" width="5" height="5"/>
+        <rect class="cls-8" x="10.25" y=".25" width="5" height="5"/>
+        <rect class="cls-6" x="15.25" y=".25" width="5" height="5"/>
+        <rect class="cls-2" x="15.25" y="5.25" width="5" height="5"/>
+        <rect class="cls-9" x=".25" y="5.25" width="5" height="5"/>
+        <rect class="cls-8" x=".25" y="10.25" width="5" height="5"/>
+        <rect class="cls-7" x="15.25" y="10.25" width="5" height="5"/>
+        <rect class="cls-3" x="15.25" y="15.25" width="5" height="5"/>
+        <rect class="cls-10" x="10.25" y="15.25" width="5" height="5"/>
+        <rect class="cls-6" x="5.25" y="15.25" width="5" height="5"/>
+        <rect class="cls-1" x=".25" y="15.25" width="5" height="5"/>
+        <rect class="cls-8" x="5.25" y="5.25" width="5" height="5"/>
+        <rect class="cls-4" x="10.25" y="10.25" width="5" height="5"/>
+        <rect class="cls-11" x="5.25" y="10.25" width="5" height="5"/>
+        <rect class="cls-5" x="10.25" y="5.25" width="5" height="5"/>
+      </g>
+      <rect class="cls-12" x=".25" y=".25" width="20" height="20"/>
+    </g>
+  </g>
+</svg>

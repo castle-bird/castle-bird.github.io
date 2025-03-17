@@ -1,0 +1,42 @@
+[
+    {
+        "depth1": {
+            "text": "bar",
+            "path": ""
+        },
+        "depth2": [
+            {
+                "text": "Property",
+                "path": "/pages/manual/chart/bar/index.html#property"
+            },
+            {
+                "text": "Method",
+                "path": "/pages/manual/chart/bar/index.html#method"
+            },
+            {
+                "text": "Event",
+                "path": "/pages/manual/chart/bar/index.html#event"
+            }
+        ]
+    },
+    {
+        "depth1": {
+            "text": "hbar",
+            "path": ""
+        },
+        "depth2": [
+            {
+                "text": "Property",
+                "path": "/pages/manual/chart/hbar/index.html#property"
+            },
+            {
+                "text": "Method",
+                "path": "/pages/manual/chart/hbar/index.html#method"
+            },
+            {
+                "text": "Event",
+                "path": "/pages/manual/chart/hbar/index.html#event"
+            }
+        ]
+    }
+]

@@ -1,0 +1,83 @@
+/***************************
+        레이아웃 관련 
+***************************/
+
+header {
+    padding: 0px 30px;
+    background-color: $color-black2;
+
+    .header-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        height: 70px;
+
+        h1 {
+            a {
+                display: block;
+                width: 121px;
+                height: 25px;
+                background: no-repeat url("../images/layout/logo.svg") center;
+            }
+        }
+
+        .util {
+            display: flex;
+            gap: 30px;
+
+            li {
+                a {
+                    font-weight: 700;
+                    font-size: 18px;
+                    color: $font-gray1;
+
+                    &.on {
+                        color: $font-white1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/***************************
+        main 관련
+***************************/
+
+main {
+    display: block;
+    min-height: calc(100vh - 70px);
+    padding: 30px 0px 0px 0px;
+
+    #main-wrap {
+        display: flex;
+
+        > * {
+            height: calc(100vh - 100px);
+        }
+
+        iframe {
+            flex: 1;
+        }
+    }
+}
+
+#content {
+    flex: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    .content-wrap {
+        width: 1156px;
+        margin: 0 auto;
+
+        > *:last-child {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+iframe {
+    
+}

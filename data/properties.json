@@ -1,0 +1,25 @@
+[
+    {
+        "depth1": {
+            "text": "accumulative",
+            "path": "/pages/manual/properties/accumulative/index.html"
+        },
+        "depth2": []
+    },
+    {
+        "depth1": {
+            "text": "angles",
+            "path": ""
+        },
+        "depth2": [
+            {
+                "text": "End",
+                "path": "/pages/manual/properties/angles/end.html"
+            },
+            {
+                "text": "Start",
+                "path": "/pages/manual/properties/angles/start.html"
+            }
+        ]
+    }
+]

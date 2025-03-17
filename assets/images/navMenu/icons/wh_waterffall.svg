@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20.25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #cecece;
+      }
+
+      .cls-3, .cls-4 {
+        fill: none;
+      }
+
+      .cls-4 {
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: .25px;
+      }
+    </style>
+  </defs>
+  <g id="wh">
+    <g>
+      <rect class="cls-3" y=".12" width="20" height="20"/>
+      <rect class="cls-1" y=".92" width="3.2" height="18.4"/>
+      <line class="cls-4" x1=".75" y1=".12" x2="2.45" y2=".12"/>
+      <line class="cls-4" x1=".75" y1="20.12" x2="2.45" y2="20.12"/>
+      <rect class="cls-2" x="16.8" y=".92" width="3.2" height="18.4"/>
+      <line class="cls-4" x1="17.55" y1=".12" x2="19.25" y2=".12"/>
+      <line class="cls-4" x1="17.55" y1="20.12" x2="19.25" y2="20.12"/>
+      <line class="cls-4" x1="6.35" y1=".12" x2="8.05" y2=".12"/>
+      <rect class="cls-2" x="5.6" y="5.72" width="3.2" height="8.8"/>
+      <line class="cls-4" x1="6.35" y1="15.32" x2="8.05" y2="15.32"/>
+      <line class="cls-4" x1="11.95" y1=".12" x2="13.65" y2=".12"/>
+      <rect class="cls-1" x="11.2" y=".92" width="3.2" height="13.6"/>
+      <line class="cls-4" x1="11.95" y1="15.32" x2="13.65" y2="15.32"/>
+    </g>
+  </g>
+</svg>

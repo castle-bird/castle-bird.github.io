@@ -1,0 +1,202 @@
+[
+    {
+        "depth1": {
+            "text": "bar",
+            "path": ""
+        },
+        "depth2": [
+            {
+                "text": "barBasic",
+                "path": "/pages/gallery/bar/barBasic.html"
+            },
+            {
+                "text": "barBasicKey",
+                "path": "/pages/gallery/bar/barBasicKey.html"
+            },
+            {
+                "text": "barBasicValue",
+                "path": "/pages/gallery/bar/barBasicValue.html"
+            }
+        ]
+    },
+    {
+        "depth1": {
+            "text": "hbar",
+            "path": ""
+        },
+        "depth2": [
+            {
+                "text": "hbarBasic",
+                "path": "/pages/gallery/hbar/hbarBasic.html"
+            },
+            {
+                "text": "hbar3D",
+                "path": "/pages/gallery/hbar/hbar3D.html"
+            },
+            {
+                "text": "hbarBasic",
+                "path": "/pages/gallery/hbar/hbarBasic.html"
+            }
+        ]
+    },
+    {
+        "depth1": {
+            "text": "line",
+            "path": ""
+        },
+        "depth2": [
+            {
+                "text": "lineBasic",
+                "path": "/pages/gallery/line/lineBasic.html"
+            },
+            {
+                "text": "line3D",
+                "path": "/pages/gallery/line/line3D.html"
+            },
+            {
+                "text": "lineAdjustable",
+                "path": "/pages/gallery/line/lineAdjustable.html"
+            }
+        ]
+    },
+    {
+        "depth1": {
+            "text": "rose",
+            "path": ""
+        },
+        "depth2": [
+            {
+                "text": "roseBasic",
+                "path": "/pages/gallery/rose/roseBasic.html"
+            },
+            {
+                "text": "roseMultiData",
+                "path": "/pages/gallery/rose/roseMultiData.html"
+            },
+            {
+                "text": "rosePie",
+                "path": "/pages/gallery/rose/rosePie.html"
+            }
+        ]
+    },
+    {
+        "depth1": {
+            "text": "radar",
+            "path": ""
+        },
+        "depth2": [
+            {
+                "text": "radarBasic",
+                "path": "/pages/gallery/radar/radarBasic.html"
+            },
+            {
+                "text": "radarAnimation",
+                "path": "/pages/gallery/radar/radarAnimation.html"
+            },
+            {
+                "text": "radarLineOnly",
+                "path": "/pages/gallery/radar/radarLineOnly.html"
+            }
+        ]
+    },
+    {
+        "depth1": {
+            "text": "pie",
+            "path": ""
+        },
+        "depth2": [
+            {
+                "text": "pieBasic",
+                "path": "/pages/gallery/pie/pieBasic.html"
+            },
+            {
+                "text": "pie3d",
+                "path": "/pages/gallery/pie/pie3d.html"
+            },
+            {
+                "text": "pieBackground",
+                "path": "/pages/gallery/pie/pieBackground.html"
+            }
+        ]
+    },
+    {
+        "depth1": {
+            "text": "scatter",
+            "path": ""
+        },
+        "depth2": [
+            {
+                "text": "scatterBasic",
+                "path": "/pages/gallery/scatter/scatterBasic.html"
+            },
+            {
+                "text": "scatterAverageLine",
+                "path": "/pages/gallery/scatter/scatterAverageLine.html"
+            },
+            {
+                "text": "scatterBackgroundHBar",
+                "path": "/pages/gallery/scatter/scatterBackgroundHBar.html"
+            }
+        ]
+    },
+    {
+        "depth1": {
+            "text": "rscatter",
+            "path": ""
+        },
+        "depth2": [
+            {
+                "text": "rscatterBasic",
+                "path": "/pages/gallery/rscatter/rscatterBasic.html"
+            },
+            {
+                "text": "rscatterKey",
+                "path": "/pages/gallery/rscatter/rscatterKey.html"
+            },
+            {
+                "text": "rscatterLabel",
+                "path": "/pages/gallery/rscatter/rscatterLabel.html"
+            }
+        ]
+    },
+    {
+        "depth1": {
+            "text": "gauge",
+            "path": ""
+        },
+        "depth2": [
+            {
+                "text": "gaugeBasic",
+                "path": "/pages/gallery/gauge/gaugeBasic.html"
+            },
+            {
+                "text": "gaugeBackgroundGrident",
+                "path": "/pages/gallery/gauge/gaugeBackgroundGrident.html"
+            },
+            {
+                "text": "gaugeBlack",
+                "path": "/pages/gallery/gauge/gaugeBlack.html"
+            }
+        ]
+    },
+    {
+        "depth1": {
+            "text": "meter",
+            "path": ""
+        },
+        "depth2": [
+            {
+                "text": "meterBasic",
+                "path": "/pages/gallery/meter/meterBasic.html"
+            },
+            {
+                "text": "meterBlack",
+                "path": "/pages/gallery/meter/meterBlack.html"
+            },
+            {
+                "text": "meterClick",
+                "path": "/pages/gallery/meter/meterClick.html"
+            }
+        ]
+    }
+]

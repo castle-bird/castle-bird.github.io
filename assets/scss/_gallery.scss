@@ -1,0 +1,313 @@
+// 페이지 경로
+.page-path {
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+    font-size: 14px;
+    margin-bottom: 40px;
+
+    li {
+        position: relative;
+
+        &:last-child::before {
+            display: none;
+        }
+
+        &::before {
+            content: ">";
+            position: absolute;
+            top: 50%;
+            left: calc(100% + 3px);
+            transform: translateY(-50%);
+        }
+    }
+}
+
+// 차트 넣는 박스
+#chart-box {
+    
+    height: 588px;
+    margin-bottom: 20px;
+    background-color: $color-white1;
+    border: 1px solid $color-gray3;
+    border-radius: 5px;
+}
+
+// 차트 옵션들
+.chart-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+
+    li {
+        width: calc((100% - 20px) / 2);
+        border-radius: 5px;
+        border: 1px solid $color-gray3;
+        height: max-content;
+        overflow: hidden;
+
+        > button {
+            width: 100%;
+            padding: 20px 30px;
+            text-align: left;
+            font-weight: 700;
+            font-size: 18px;
+            background-color: $font-white1;
+            background-repeat: no-repeat;
+            background-position: right 34px top 28px;
+            background-image: url("../images/main/gallery/option_arr.png");
+
+            &.on {
+                background-image: url("../images/main/gallery/option_arr_on.png");
+            }
+
+            &:disabled {
+                background-color: $color-gray1;
+                color: $font-gray3;
+            }
+        }
+
+        .options {
+            display: none;
+            flex-wrap: wrap;
+            gap: 15px 20px;
+            padding: 30px;
+
+            &.on {
+                display: flex;
+            }
+
+            button {
+                width: calc((100% - 40px) / 3);
+            }
+        }
+    }
+}
+
+// 차트 리소스들
+#chart-res {
+    position: relative;
+    background-color: $color-gray1;
+    border: 1px solid $color-gray2;
+    border-radius: 5px;
+    padding: 15px 30px 30px;
+
+    .res-btns {
+        display: flex;
+        gap: 40px;
+
+        li {
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 3px;
+                left: calc(100% + 19px);
+
+                width: 1px;
+                height: 12px;
+                background-color: $font-gray3;
+            }
+
+            &:last-child::before {
+                display: none;
+            }
+
+            button {
+                font-weight: 600;
+                color: $font-gray3;
+
+                &.on {
+                    color: $font-default;
+                }
+            }
+        }
+    }
+
+    .res-util {
+        position: absolute;
+        top: 15px;
+        right: 30px;
+
+        display: flex;
+        gap: 15px;
+
+        li {
+            button {
+                font-size: 12px;
+
+                &.reset {
+                    padding: 0px 37px 0px 20px;
+                    background-repeat: no-repeat;
+                    background-position: right 18px center;
+                    background-image: url("../images/main/gallery/reset.svg");
+
+                    &:hover,
+                    &.on {
+                        background-image: url("../images/main/gallery/reset_on.svg");
+                    }
+                }
+            }
+        }
+    }
+
+    .res-contents {
+        margin-top: 20px;
+
+        > div {
+            display: none;
+            border-radius: 5px;
+            height: 500px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            background-color: $color-white1;
+
+            &.on {
+                display: block;
+            }
+        }
+    }
+}
+
+// 갤러리 메인
+.gallery-main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    li {
+        width: 148px;
+        height: 168px;
+
+        a {
+            position: relative;
+            display: block;
+            height: 100%;
+            padding: 8px;
+            border-radius: 10px;
+            background-color: $color-gray5;
+
+            span {
+                display: inline-block;
+                max-width: 100%;
+
+                padding: 3px 8px;
+                border-radius: 5px;
+                background-color: $font-white1;
+
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 50%;
+                bottom: 30px;
+                transform: translateX(-50%);
+
+                width: 70px;
+                height: 70px;
+                background-repeat: no-repeat;
+                background-position: center;
+                transition: 0.3s;
+            }
+
+            &:hover {
+                &::before {
+                    transform: translateX(-50%) scale(1.1, 1.1);
+                }
+            }
+
+            &.bar::before {
+                background-image: url("../images/main/gallery/btn_WF_Chart_bar.png");
+            }
+            &.hbar::before {
+                background-image: url("../images/main/gallery/btn_WF_Chart_hbar.png");
+            }
+            &.line::before {
+                background-image: url("../images/main/gallery/btn_WF_Chart_line.png");
+            }
+            &.rose::before {
+                background-image: url("../images/main/gallery/btn_WF_Chart_rose.png");
+            }
+            &.radar::before {
+                background-image: url("../images/main/gallery/btn_WF_Chart_radar.png");
+            }
+            &.pie::before {
+                background-image: url("../images/main/gallery/btn_WF_Chart_pie.png");
+            }
+            &.scatter::before {
+                background-image: url("../images/main/gallery/btn_WF_Chart_scatter.png");
+            }
+            &.rscatter::before {
+                background-image: url("../images/main/gallery/btn_WF_Chart_rscatter.png");
+            }
+            &.gauge::before {
+                background-image: url("../images/main/gallery/btn_WF_Chart_gauge.png");
+            }
+            &.meter::before {
+                background-image: url("../images/main/gallery/btn_WF_Chart_meter.png");
+            }
+            &.org::before {
+                background-image: url("../images/main/gallery/btn_WF_Chart_org.png");
+            }
+            &.tree::before {
+                background-image: url("../images/main/gallery/btn_WF_Chart_tree.png");
+            }
+            &.segment::before {
+                background-image: url("../images/main/gallery/btn_WF_Chart_segment.png");
+            }
+            &.gantt::before {
+                background-image: url("../images/main/gallery/btn_WF_Chart_gantt.png");
+            }
+            &.waterfall::before {
+                background-image: url("../images/main/gallery/btn_WF_Chart_waterfall.png");
+            }
+            &.vprogress::before {
+                background-image: url("../images/main/gallery/btn_WF_Chart_vprogress.png");
+            }
+            &.hprogress::before {
+                background-image: url("../images/main/gallery/btn_WF_Chart_hprogress.png");
+            }
+            &.semicircularprogress::before {
+                background-image: url("../images/main/gallery/btn_WF_Chart_semicircularprogress.png");
+            }
+            &.odo::before {
+                background-image: url("../images/main/gallery/btn_WF_Chart_odo.png");
+            }
+            &.bipolar::before {
+                background-image: url("../images/main/gallery/btn_WF_Chart_bipolar.png");
+            }
+            &.activity::before {
+                background-image: url("../images/main/gallery/btn_WF_Chart_activity.png");
+            }
+            &.fuel::before {
+                background-image: url("../images/main/gallery/btn_WF_Chart_fuel.png");
+            }
+            &.pyramid::before {
+                background-image: url("../images/main/gallery/btn_WF_Chart_pyramid.png");
+            }
+            &.funnel::before {
+                background-image: url("../images/main/gallery/btn_WF_Chart_funnel.png");
+            }
+            &.horseshoe::before {
+                background-image: url("../images/main/gallery/btn_WF_Chart_horseshoe.png");
+            }
+            &.thermometer::before {
+                background-image: url("../images/main/gallery/btn_WF_Chart_thermometer.png");
+            }
+            &.heatmap::before {
+                background-image: url("../images/main/gallery/btn_WF_Chart_heatmap.png");
+            }
+            &.sunburst::before {
+                background-image: url("../images/main/gallery/btn_WF_Chart_sunburst.png");
+            }
+            &.custom::before {
+                background-image: url("../images/main/gallery/btn_WF_Chart_custom.png");
+            }
+        }
+    }
+}
