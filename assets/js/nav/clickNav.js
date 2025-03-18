@@ -1,5 +1,3 @@
-import createTag from "./createTag.js";
-
 let currentIdx = 0;
 export let currentPath = "";
 

@@ -45,16 +45,6 @@ const headerFetch = async () => {
     }
 };
 
-const test = ()=> {
-    const iframe = document.querySelector('#page-view')
-
-    iframe.addEventListener('load', ()=>{
-        console.log('asd')
-    })
-}
-
-test()
-
 headerFetch();
 navGallery();
 navChart();
