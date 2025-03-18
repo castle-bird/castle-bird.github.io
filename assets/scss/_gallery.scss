@@ -178,9 +178,10 @@
     gap: 20px;
 
     li {
-        width: 148px;
-        height: 168px;
-
+        // width: 148px;
+        // height: 168px;
+        width: calc((100% - 80px) / 5);
+        height: 200px;
         a {
             position: relative;
             display: block;
@@ -205,7 +206,7 @@
                 content: "";
                 position: absolute;
                 left: 50%;
-                bottom: 30px;
+                bottom: 50px;
                 transform: translateX(-50%);
 
                 width: 70px;
