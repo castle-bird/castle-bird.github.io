@@ -1,0 +1,288 @@
+/***************************
+        LEFT 메뉴 관련
+***************************/
+
+#navMenu {
+    width: 290px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-left: 15px;
+
+    // 차트별/속성별 버튼
+    .menu-category {
+        display: flex;
+        border-bottom: 1px solid $color-primary;
+        border-radius: 10px 10px 0px 0px;
+        overflow: hidden;
+        margin-bottom: 15px;
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            height: 40px;
+            text-align: center;
+            font-weight: 500;
+            font-size: 14px;
+            color: $font-gray1;
+            background-color: $color-gray7;
+
+            &.on {
+                background-color: $color-primary;
+                color: $font-white1;
+            }
+        }
+    }
+
+    .depth1 {
+        > li {
+            margin-top: 5px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+
+            > button {
+                position: relative;
+                width: 100%;
+                height: 40px;
+                padding: 0px 36px 0px 40px;
+                border-radius: 5px;
+                text-align: left;
+                font-size: 14px;
+                color: $font-gray1;
+                background-repeat: no-repeat;
+                background-position: right 14px center;
+                background-image: url("../images/navMenu/btn_arr.svg");
+
+                &:hover,
+                &:focus {
+                    background-color: $color-gray4;
+                }
+
+                &.on {
+                    background-color: $color-primary;
+                    background-image: url("../images/navMenu/btn_arr_on.svg");
+                    color: $font-white1;
+                }
+
+                &.no-icon {
+                    padding: 0px 36px 0px 15px;
+                }
+
+                &.no-arr {
+                    background-image: none;
+                }
+            }
+        }
+    }
+
+    .depth2 {
+        display: none;
+        margin-top: 5px;
+
+        &.on {
+            display: block;
+        }
+
+        > li {
+            padding-left: 10px;
+            > button {
+                width: 100%;
+                height: 40px;
+                padding: 10px;
+                border-radius: 5px;
+                font-size: 14px;
+                color: $font-gray1;
+                text-align: left;
+
+                &:hover,
+                &:focus {
+                    background-color: $color-gray4;
+                }
+
+                &:active {
+                    font-weight: 700;
+                }
+
+                &.on {
+                    font-weight: 700;
+                    color: $color-primary;
+                    background-color: $color-white1;
+                }
+            }
+        }
+    }
+}
+
+// 버튼 이미지 관련
+.depth1 {
+    > li {
+        > button {
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 10px;
+                transform: translateY(-50%);
+                width: 21px;
+                height: 21px;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            // bar
+            &.bar::before {
+                background-image: url("/assets/images/navMenu/icons/bk_bar.svg");
+            }
+            &.bar.on::before {
+                background-image: url("/assets/images/navMenu/icons/wh_bar.svg");
+            }
+
+            // hbar
+            &.hbar::before {
+                background-image: url("/assets/images/navMenu/icons/bk_hbar.svg");
+            }
+            &.hbar.on::before {
+                background-image: url("/assets/images/navMenu/icons/wh_hbar.svg");
+            }
+
+            // line
+            &.line::before {
+                background-image: url("/assets/images/navMenu/icons/bk_line.svg");
+            }
+            &.line.on::before {
+                background-image: url("/assets/images/navMenu/icons/wh_line.svg");
+            }
+
+            // rose
+            &.rose::before {
+                background-image: url("/assets/images/navMenu/icons/bk_rose.svg");
+            }
+            &.rose.on::before {
+                background-image: url("/assets/images/navMenu/icons/wh_rose.svg");
+            }
+
+            // radar
+            &.radar::before {
+                background-image: url("/assets/images/navMenu/icons/bk_radar.svg");
+            }
+            &.radar.on::before {
+                background-image: url("/assets/images/navMenu/icons/wh_radar.svg");
+            }
+
+            // pie
+            &.pie::before {
+                background-image: url("/assets/images/navMenu/icons/bk_pie.svg");
+            }
+            &.pie.on::before {
+                background-image: url("/assets/images/navMenu/icons/wh_pie.svg");
+            }
+
+            // scatter
+            &.scatter::before {
+                background-image: url("/assets/images/navMenu/icons/bk_scatter.svg");
+            }
+            &.scatter.on::before {
+                background-image: url("/assets/images/navMenu/icons/wh_scatter.svg");
+            }
+
+            // rscatter
+            &.rscatter::before {
+                background-image: url("/assets/images/navMenu/icons/bk_rscatter.svg");
+            }
+            &.rscatter.on::before {
+                background-image: url("/assets/images/navMenu/icons/wh_rscatter.svg");
+            }
+
+            // gauge
+            &.gauge::before {
+                background-image: url("/assets/images/navMenu/icons/bk_gauge.svg");
+            }
+            &.gauge.on::before {
+                background-image: url("/assets/images/navMenu/icons/wh_gauge.svg");
+            }
+
+            // meter
+            &.meter::before {
+                background-image: url("/assets/images/navMenu/icons/bk_meter.svg");
+            }
+            &.meter.on::before {
+                background-image: url("/assets/images/navMenu/icons/wh_meter.svg");
+            }
+
+            // org
+            &.org::before {
+                background-image: url("/assets/images/navMenu/icons/bk_org.svg");
+            }
+            &.org.on::before {
+                background-image: url("/assets/images/navMenu/icons/wh_org.svg");
+            }
+
+            // tree
+            &.tree::before {
+                background-image: url("/assets/images/navMenu/icons/bk_tree.svg");
+            }
+            &.tree.on::before {
+                background-image: url("/assets/images/navMenu/icons/wh_tree.svg");
+            }
+
+            // segment
+            &.segment::before {
+                background-image: url("/assets/images/navMenu/icons/bk_segment.svg");
+            }
+            &.segment.on::before {
+                background-image: url("/assets/images/navMenu/icons/wh_segment.svg");
+            }
+
+            // gantt
+            &.gantt::before {
+                background-image: url("/assets/images/navMenu/icons/bk_gantt.svg");
+            }
+            &.gantt.on::before {
+                background-image: url("/assets/images/navMenu/icons/wh_gantt.svg");
+            }
+
+            // waterfall
+            &.waterfall::before {
+                background-image: url("/assets/images/navMenu/icons/bk_waterfall.svg");
+            }
+            &.waterfall.on::before {
+                background-image: url("/assets/images/navMenu/icons/wh_waterfall.svg");
+            }
+
+            // vprogress
+            &.vprogress::before {
+                background-image: url("/assets/images/navMenu/icons/bk_vprogress.svg");
+            }
+            &.vprogress.on::before {
+                background-image: url("/assets/images/navMenu/icons/wh_vprogress.svg");
+            }
+
+            // hprogress
+            &.hprogress::before {
+                background-image: url("/assets/images/navMenu/icons/bk_hprogress.svg");
+            }
+            &.hprogress.on::before {
+                background-image: url("/assets/images/navMenu/icons/wh_hprogress.svg");
+            }
+
+            // semicircularprogress
+            &.semicircularprogress::before {
+                background-image: url("/assets/images/navMenu/icons/bk_semicircularprogress.svg");
+            }
+            &.semicircularprogress.on::before {
+                background-image: url("/assets/images/navMenu/icons/wh_semicircularprogress.svg");
+            }
+
+            // odo
+            &.odo::before {
+                background-image: url("/assets/images/navMenu/icons/bk_odo.svg");
+            }
+            &.odo.on::before {
+                background-image: url("/assets/images/navMenu/icons/wh_odo.svg");
+            }
+        }
+    }
+}

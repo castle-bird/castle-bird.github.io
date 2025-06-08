@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="shortcut icon" href="/assets/images/layout/DxChartIco.ico" />
+        <title>DxChart</title>
+        <link rel="stylesheet" href="/assets/css/style.min.css" />
+        <script src="/assets/js/common.js" type="module"></script>
+    </head>
+    <body>
+        <div id="body-wrap">
+            <!-- common.js에서 헤더 호출 -->
+            <header></header>
+
+            <main>
+                <!-- 
+                    갤러리, 메뉴얼 구분 클래스
+                    갤러리 = gallery
+                    메뉴얼 = manual
+                -->
+                <div id="main-wrap" class="gallery">
+                    <!-- 
+                        common.js에서 메뉴 호출 
+                        갤러리 : gallery-menu
+                        메뉴얼-차트별 : chart-menu
+                        메뉴얼-속성별 : properties-menu
+                    -->
+                    <nav id="navMenu" class="properties-menu"></nav>
+
+                    <!-- iframe으로 메뉴 호출 -->
+                    <iframe
+                        src="/pages/manual/properties/accumulative/index.html"
+                        id="page-view"
+                        title="컨텐츠"
+                    ></iframe>
+                </div>
+                <!-- // .main-wrap -->
+            </main>
+        </div>
+        <!-- // #body-wrap -->
+    </body>
+</html>

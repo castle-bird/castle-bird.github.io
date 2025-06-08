@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <title>DxChart</title>
+        <link rel="stylesheet" href="/assets/css/style.min.css" />
+        <script src="/assets/js/sub.js" type="module"></script>
+    </head>
+    <body>
+        <section id="content">
+            <div class="content-wrap">
+                <!-- path 동적생성 -->
+                <ul class="page-path"></ul>
+
+                <h2 class="title1">
+                    조절 가능한 선 차트트
+                    <span>(lineAdjustable)</span>
+                </h2>
+
+                <!-- 컨텐츠 시작 -->
+                <div id="chart-box">차트 넣는 곳</div>
+
+                <ul class="chart-options">
+                    <li>
+                        <button>차트속성</button>
+                        <div class="options properties">
+                            <button class="default">specific Y-axis labels</button>
+                            <button class="default">Y-axis position</button>
+                            <button class="default">Y-axis labels</button>
+                            <button class="default">Y min (50) setting</button>
+                            <button class="default">X-axis labels</button>
+                        </div>
+                    </li>
+                    <li>
+                        <button>다른샘플</button>
+                        <div class="options sample">
+                            <button class="default">type1</button>
+                            <button class="default">type2</button>
+                            <button class="default">type3</button>
+                            <button class="default">type4</button>
+                            <button class="default">type5</button>
+                        </div>
+                    </li>
+                </ul>
+
+                <div id="chart-res">
+                    <ul class="res-btns">
+                        <li><button>SOURCE</button></li>
+                        <li><button>DATA</button></li>
+                    </ul>
+                    <ul class="res-util">
+                        <li><button class="default reset">새로고침</button></li>
+                        <li><button class="default apply">적용</button></li>
+                    </ul>
+                    <div class="res-contents">
+                        <div class="source">소스 내용</div>
+                        <div class="data">data 내용</div>
+                    </div>
+                </div>
+            </div>
+            <!-- // .content-wrap -->
+        </section>
+    </body>
+</html>

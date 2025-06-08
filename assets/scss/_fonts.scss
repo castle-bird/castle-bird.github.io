@@ -1,0 +1,51 @@
+/***************************
+        폰트 관련
+***************************/
+
+// "Pretendard Variable", Pretendard;
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+// 텍스트 안보이기
+.font-hidden {
+    font-size: 0;
+    line-height: 0;
+    text-indent: -999px;
+}
+
+// 차트 제목
+.title1 {
+    padding-bottom: 60px;
+    font-weight: 700;
+    font-size: 30px;
+
+    span {
+        color: $font-gray1;
+        font-size: 20px;
+    }
+}
+
+// 속성별 제목
+.title2 {
+    padding: 55px 0px 20px 0px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+// 차트별 제목
+.title3 {
+    font-size: 30px;
+    padding: 55px 0px 20px 0px;
+    border-bottom: 1px solid $color-gray3;
+
+    + p {
+        padding: 20px 0px 50px;
+    }
+}
+
+// 차트별 제목 2
+.title4 {
+    font-size: 24px;
+    font-weight: 500;
+    padding: 50px 0px 20px;
+}
+
